@@ -4,7 +4,7 @@
 *"Data with an expiration date"*
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build Status](https://github.com/yourusername/chronodb/actions/workflows/rust.yml/badge.svg)](https://github.com/yourusername/chronodb/actions)
+[![Build Status](https://github.com/blhmr/chronodb/actions/workflows/rust.yml/badge.svg)](https://github.com/blhmr/chronodb/actions)
 
 ## Table of Contents
 - [Features](#features)
