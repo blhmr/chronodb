@@ -38,17 +38,23 @@ chronodb --port 8080
 ```
 
 Basic operations:
+Set a persistent key
 ```json
-// Set a persistent key
 {"method": "SET", "key": "name", "value": "ChronoDB"}
+```
 
-// Set with 30s TTL
+Set with 30s TTL
+```json
 {"method": "SET", "key": "temp", "value": "data", "ttl": 30}
+```
 
-// Get single key
+Get single key
+```json
 {"method": "GET", "key": "name"}
+```
 
-// Get all keys
+Get all keys
+```json
 {"method": "GET", "key": "*"}
 ```
 
