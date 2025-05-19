@@ -1,5 +1,7 @@
 # ChronoDB ⏳⚡
 
+![ChronoDB Logo](assets/logo.png)
+
 **A time-aware key-value store written in Rust**  
 *"Data with an expiration date"*
 
