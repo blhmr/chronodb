@@ -77,11 +77,9 @@ impl Database {
                 let key = request.key.unwrap();
                 if key == "*" {
                     let all_pairs = self.get_all().await;
-                    let pairs = serde_json::to_string(&all_pairs);
-                    if let Err(e) = pairs {
-                        return Err(e.to_string());
-                    } else {
-                        return Ok(pairs.unwrap());
+                    match serde_json::to_string(&all_pairs) {
+                        Ok(pairs) => return Ok(pairs),
+                        Err(e) => return Err(e.to_string()),
                     }
                 }
                 let value = self.get(&key).await;
