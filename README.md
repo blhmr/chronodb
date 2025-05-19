@@ -4,18 +4,6 @@
 *"Data with an expiration date"*
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build Status](https://github.com/blhmr/chronodb/actions/workflows/rust.yml/badge.svg)](https://github.com/blhmr/chronodb/actions)
-
-## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Reference](#api-reference)
-- [Examples](#examples)
-- [Architecture](#architecture)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 - 🕒 **TTL Support**: Automatic key expiration
