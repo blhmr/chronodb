@@ -20,7 +20,7 @@ cd chronodb && cargo build --release
 ## Usage
 Start the server
 ```sh
-chronodb --port 8080
+chronodb 8080
 ```
 
 Basic operations:
