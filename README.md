@@ -13,9 +13,7 @@
 
 ## Installation
 ```sh
-cargo add chronodb  # When published
-# Or from source:
-git clone https://github.com/yourusername/chronodb
+git clone https://github.com/blhmr/chronodb
 cd chronodb && cargo build --release
 ```
 
