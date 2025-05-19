@@ -8,8 +8,6 @@
 ## Features
 - 🕒 **TTL Support**: Automatic key expiration
 - 🚀 **JSON-over-TCP**: Simple protocol
-- 🔍 **Wildcard Queries**: `GET *` for all keys
-- 📦 **Embeddable**: Single binary, no dependencies
 
 ## Installation
 ```sh
