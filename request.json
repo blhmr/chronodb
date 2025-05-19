@@ -1,8 +1,0 @@
-[
-    {"method": "SET", "key": "name", "value": "hatim"},
-    {"method": "SET", "key": "age", "value": "18"},
-    {"method": "SET", "key": "location:country", "value": "Morocco"},
-    {"method": "SET", "key": "location:city", "value": "Kenitra"},
-    {"method": "SET", "key": "is_student", "value": "true"},
-    {"method": "GET", "key": "*"}
-]
