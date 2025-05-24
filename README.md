@@ -11,10 +11,10 @@
 
 ## Features
 
-- 🕒 Time-To-Live (TTL) support for automatic data expiration  
-- 🚀 Simple JSON-over-TCP protocol  
-- 🔄 Support for insert, query, delete operations by bucket and pattern  
-- 🗃️ Bucket-based data organization  
+- Time-To-Live (TTL) support for automatic data expiration  
+- Simple JSON-over-TCP protocol  
+- Support for insert, query, delete operations by bucket and pattern  
+- Bucket-based data organization  
 
 ## Installation
 ```sh
