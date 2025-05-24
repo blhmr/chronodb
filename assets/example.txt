@@ -1,0 +1,40 @@
+SERVER:
+
+[+] Server running on 127.0.0.1:8080
+[+] New connection from: 127.0.0.1:55292
+[+] Received request: {"method": "insert", "bucket": "users", "data": {"username": "hatim", "age": 18}, "ttl": 20}
+[+] New connection from: 127.0.0.1:55298
+[+] Received request: {"method": "get", "bucket": "users", "pattern": {"age": 18}}
+[+] New connection from: 127.0.0.1:55302
+[+] Received request: {"method": "get_all_buckets"}
+[+] New connection from: 127.0.0.1:55306
+[+] Received request: {"method": "get_bucket", "bucket": "users"}
+[+] New connection from: 127.0.0.1:55310
+[+] Received request: {"method": "get_all"}
+[+] New connection from: 127.0.0.1:55322
+[+] Received request: {"method": "delete", "bucket": "users", "pattern": {"username": "hatim"}}
+[+] New connection from: 127.0.0.1:55338
+[+] Received request: {"method": "delete_bucket", "bucket": "users"}
+
+CLIENT:
+
+Test case 1: sending {'method': 'insert', 'bucket': 'users', 'data': {'username': 'hatim', 'age': 18}, 'ttl': 20}
+Response: {"status":"OK"}
+
+Test case 2: sending {'method': 'get', 'bucket': 'users', 'pattern': {'age': 18}}
+Response: {"data":[{"age":18,"username":"hatim"}],"status":"OK"}
+
+Test case 3: sending {'method': 'get_all_buckets'}
+Response: {"data":["users"],"status":"OK"}
+
+Test case 4: sending {'method': 'get_bucket', 'bucket': 'users'}
+Response: {"data":[{"age":18,"username":"hatim"}],"status":"OK"}
+
+Test case 5: sending {'method': 'get_all'}
+Response: {"data":{"users":[{"age":18,"username":"hatim"}]},"status":"OK"}
+
+Test case 6: sending {'method': 'delete', 'bucket': 'users', 'pattern': {'username': 'hatim'}}
+Response: {"status":"OK"}
+
+Test case 7: sending {'method': 'delete_bucket', 'bucket': 'users'}
+Response: {"status":"OK"}
