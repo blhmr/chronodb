@@ -1,0 +1,7 @@
+{"bucket":"users","data":{"age":18,"username":"hatim"},"method":"insert"}
+{"bucket":"users","method":"get","pattern":{"age":18}}
+{"method":"get_all_buckets"}
+{"bucket":"users","method":"get_bucket"}
+{"method":"get_all"}
+{"bucket":"users","method":"delete","pattern":{"username":"hatim"}}
+{"bucket":"users","method":"delete_bucket"}

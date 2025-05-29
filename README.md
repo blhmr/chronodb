@@ -22,6 +22,13 @@ git clone https://github.com/blhmr/chronodb
 cd chronodb && cargo build --release
 ```
 
+## Running
+To run it on port 8080:
+```sh
+# Add a file path (optional) to save events into that file
+cargo run -- 8080 ./logs.txt
+```
+
 ## Example JSON Requests
 
 Insert data with TTL (in seconds):
@@ -150,6 +157,17 @@ Response: {"status":"OK"}
 
 Test case 7: sending {'method': 'delete_bucket', 'bucket': 'users'}
 Response: {"status":"OK"}
+```
+
+Expected content in logs.txt (if passed as command-line argument)
+```
+{"bucket":"users","data":{"age":18,"username":"hatim"},"method":"insert"}
+{"bucket":"users","method":"get","pattern":{"age":18}}
+{"method":"get_all_buckets"}
+{"bucket":"users","method":"get_bucket"}
+{"method":"get_all"}
+{"bucket":"users","method":"delete","pattern":{"username":"hatim"}}
+{"bucket":"users","method":"delete_bucket"}
 ```
 
 ## Notes
